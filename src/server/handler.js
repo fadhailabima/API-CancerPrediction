@@ -37,7 +37,7 @@ async function predictHistories(request, h) {
   const { model } = request.server.app;
   const { Firestore } = require("@google-cloud/firestore");
   const db = new Firestore({
-    projectId: "submissionmlgc-attafriski",
+    projectId: "submissionmlgc-fadhailabima",
   });
   const predictCollection = db.collection("predictions");
   const snapshot = await predictCollection.get();
